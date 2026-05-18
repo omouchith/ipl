@@ -1,0 +1,229 @@
+<main>
+
+    <section class="hero">
+        <h2>IPL Match Schedule 2026</h2>
+        <p>Mark your calendars for the biggest cricket battles 🔥</p>
+    </section>
+
+    <section class="table-container">
+
+        <table class="data-table">
+
+            <thead>
+                <tr>
+                    <th>Match No.</th>
+                    <th>Date</th>
+                    <th>Teams</th>
+                    <th>Venue</th>
+                    <th>Time (IST)</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>1</td>
+                    <td>March 20</td>
+                    <td>RCB vs MI</td>
+                    <td>Wankhede Stadium</td>
+                    <td>7:30 PM</td>
+                </tr>
+
+                <tr> 
+                    <td>2</td>
+                    <td>March 22</td>
+                    <td>CSK vs KKR</td>
+                    <td>Chepauk Stadium</td>
+                    <td>3:30 PM</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>March 25</td>
+                    <td>SRH vs RR</td>
+                    <td>Rajiv Gandhi Stadium</td>
+                    <td>7:30 PM</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>March 27</td>
+                    <td>MI vs RR</td>
+                    <td>Mumbai</td>
+                    <td>7:30 PM</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>March 30</td>
+                    <td>GT vs LSG</td>
+                    <td>Ahmedabad</td>
+                    <td>7:30 PM</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+</main>
+
+<style>
+
+    body{
+        font-family: Arial, sans-serif;
+        background: #111;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero{
+        text-align: center;
+        padding: 40px 20px;
+        background: linear-gradient(to right, #ff9800, #ff5722);
+    }
+
+    .hero h2{
+        font-size: 40px;
+        margin-bottom: 10px;
+        color: black;
+    }
+
+    .hero p{
+        font-size: 18px;
+        color: white;
+    }
+
+    .table-container{
+        width: 85%;
+        margin: 40px auto;
+        overflow-x: auto;
+    }
+
+    .data-table{
+        width: 100%;
+        border-collapse: collapse;
+        background: #222;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .data-table th{
+        background: orange;
+        color: black;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .data-table td{
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid #444;
+        font-size: 17px;
+    }
+
+    .data-table tr:hover{
+        background: #333;
+    }
+
+    .quick-links{
+        width: 85%;
+        margin: 40px auto;
+        background: #222;
+        padding: 25px;
+        border-radius: 10px;
+        border-top: 4px solid #ff9800;
+    }
+
+    .quick-links h3{
+        color: #ff9800;
+        font-size: 24px;
+        margin-top: 0;
+    }
+
+    .links-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .link-section h4{
+        color: #ffd700;
+        margin-bottom: 12px;
+        font-size: 16px;
+    }
+
+    .link-section ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .link-section li{
+        margin: 8px 0;
+    }
+
+    .link-section a{
+        color: #ff9800;
+        text-decoration: none;
+        font-size: 14px;
+        transition: 0.3s;
+    }
+
+    .link-section a:hover{
+        color: #ffd700;
+        text-decoration: underline;
+    }
+
+</style>
+
+<script>
+// Add quick-links section dynamically before closing main
+document.addEventListener('DOMContentLoaded', function() {
+    const quickLinksHTML = `
+    <section class="quick-links">
+        <h3>📚 Explore More</h3>
+        <div class="links-grid">
+           
+            <div class="link-section">
+                <h4>⭐ Players</h4>
+                <ul>
+                    <li><a href="player-batsmen-top.html">Top Batsmen</a></li>
+                    <li><a href="player-bowlers-elite.html">Elite Bowlers</a></li>
+                    <li><a href="player-allrounders.html">All-rounders</a></li>
+                    <li><a href="player-stats-records.html">Records</a></li>
+                    <li><a href="player-emerging-stars.html">Emerging Stars</a></li>
+                </ul>
+            </div>
+
+            <div class="link-section">
+                <h4>🏟️ Stadiums</h4>
+                <ul>
+                    <li><a href="stadium-guide.html">Stadium Guide</a></li>
+                    <li><a href="stadium-capacity-specs.html">Capacity</a></li>
+                    <li><a href="stadium-facilities.html">Facilities</a></li>
+                    <li><a href="stadium-travel-guide.html">Travel Guide</a></li>
+                    <li><a href="stadium-pitch-conditions.html">Pitch Info</a></li>
+                </ul>
+            </div>
+            
+            <div class="link-section">
+                <h4>🏠 Main</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="teams.html">Teams</a></li>
+                    <li><a href="points-table.html">Points Table</a></li>
+                    <li><a href="tickets.html">Tickets</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    `;
+    const main = document.querySelector('main');
+    if (main) {
+        main.insertAdjacentHTML('beforeend', quickLinksHTML);
+    }
+});
+</script>
