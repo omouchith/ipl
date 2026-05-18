@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>IPL | Info Page</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background: #111;
+            color: white;
+        }
+
+        nav{
+            background: #ff9800;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+        }
+
+       
+    h1{
+        text-align: center;
+        color: white;
+        font-size: 60px;
+        margin: 0;
+    }
+
+        nav ul{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: rgb(245, 242, 242);
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover{
+            color: white;
+        }
+
+        .hero{
+            height: 60vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+            url('https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=1200');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h2{
+            font-size: 50px;
+            color: gold;
+            margin-bottom: 15px;
+        }
+
+        .hero p{
+            font-size: 22px;
+            width: 70%;
+        }
+
+        .info-section{
+            width: 80%;
+            margin: 50px auto;
+            background: #ede7e7;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 15px black;
+        }
+
+        .info-section h3{
+            color: orange;
+            margin-bottom: 15px;
+            margin-top: 20px;
+            font-size: 28px;
+        }
+
+        .info-section p,
+        .info-section li{
+            font-size: 18px;
+            line-height: 1.8;
+            color: #141414;
+        }
+
+        .info-section ul{
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        footer{
+            background: #ff9800;
+            color: rgb(109, 101, 101);
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+      <h1>IPL 2026</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="tickets.html">Tickets</a></li>
+            <li><a href="points-table.html">Points Table</a></li>
+        </ul>
+</nav>
+    <section class="hero">
+        <h2>About the IPL</h2>
+        <p>
+            Experience the thrill, passion, and excitement of the world’s biggest T20 cricket league.
+        </p>
+    </section>
+
+    <section class="info-section">
+
+        <h3>Our Story</h3>
+
+        <p>
+            The Indian Premier League (IPL) is one of the biggest and most popular cricket leagues in the world.
+            Founded by the BCCI in 2007, the tournament brings together international stars and young talents
+            to compete in an exciting T20 format.
+        </p>
+
+        <h3>Tournament Format</h3>
+
+        <ul>
+            <li>10 Teams participate in the tournament.</li>
+            <li>Each team plays 14 league matches.</li>
+            <li>Top 4 teams qualify for the Playoffs.</li>
+            <li>The Final determines the IPL Champion.</li>
+        </ul>
+
+        <h3>Explore IPL 2026</h3>
+
+        <h4 style="color: #ff9800; margin-top: 25px; font-size: 20px;">⭐ Player Statistics</h4>
+        <ul>
+            <li><a href="player-batsmen-top.html" style="color: #ff9800; font-weight: bold;">Elite Batsmen</a> - Top Run-Scorers</li>
+            <li><a href="player-bowlers-elite.html" style="color: #ff9800; font-weight: bold;">Elite Bowlers</a> - Top Wicket-Takers</li>
+            <li><a href="player-allrounders.html" style="color: #ff9800; font-weight: bold;">All-rounders</a> - Dynamic Players</li>
+            <li><a href="player-stats-records.html" style="color: #ff9800; font-weight: bold;">Player Records</a> - Outstanding Achievements</li>
+            <li><a href="player-emerging-stars.html" style="color: #ff9800; font-weight: bold;">Emerging Stars</a> - Next Generation</li>
+        </ul>
+
+        <h4 style="color: #ff9800; margin-top: 25px; font-size: 20px;">🏟️ Stadium Information</h4>
+        <ul>
+            <li><a href="stadium-guide.html" style="color: #ff9800; font-weight: bold;">Stadium Guide</a> - Complete Venue Details</li>
+            <li><a href="stadium-capacity-specs.html" style="color: #ff9800; font-weight: bold;">Capacity & Specifications</a> - Technical Details</li>
+            <li><a href="stadium-facilities.html" style="color: #ff9800; font-weight: bold;">Facilities</a> - Amenities & Services</li>
+            <li><a href="stadium-travel-guide.html" style="color: #ff9800; font-weight: bold;">Travel Guide</a> - Getting Around</li>
+            <li><a href="stadium-pitch-conditions.html" style="color: #ff9800; font-weight: bold;">Pitch Conditions</a> - Surface Details</li>
+        </ul>
+
+ 
+    </section>
+
+    <footer>
+        © 2026 IPL Website 
+    </footer>
+
+</body>
+</html>
